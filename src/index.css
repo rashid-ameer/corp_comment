@@ -386,6 +386,9 @@ form button span::selection {
   margin-left: 20px;
 }
 
+/* .feedback:nth-child(6n + 1) > div:nth-child(2) {
+  background-color: #a589bb;
+} */
 .feedback:nth-child(6n + 2) > div:nth-child(2) {
   background-color: #6d4989;
 }
