@@ -1,3 +1,12 @@
 export { default as Footer } from "./Footer";
 export { default as Container } from "./Container";
 export { default as Header } from "./Header";
+export { default as HashtagList } from "./HashtagList";
+export { default as FeedbackList } from "./FeedbackList";
+export { default as FeedbackForm } from "./FeedbackForm";
+export { default as Logo } from "./Logo";
+export { default as PageHeading } from "./PageHeading";
+export { default as Pattern } from "./Pattern";
+export { default as FeedbackItem } from "./FeedbackItem";
+export { default as Spinner } from "./Spinner";
+export { default as ErrorMessage } from "./ErrorMessage";

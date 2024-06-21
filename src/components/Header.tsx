@@ -1,4 +1,13 @@
+import { FeedbackForm, Logo, PageHeading, Pattern } from "./";
+
 function Header() {
-  return <div>Header</div>;
+  return (
+    <header>
+      <Pattern />
+      <Logo />
+      <PageHeading />
+      <FeedbackForm />
+    </header>
+  );
 }
 export default Header;

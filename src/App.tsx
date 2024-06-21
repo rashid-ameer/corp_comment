@@ -1,12 +1,12 @@
-import { Container, Footer, Header } from "./components";
+import { Container, Footer, HashtagList } from "./components";
 
 function App() {
   return (
-    <>
+    <div className="app">
       <Footer />
       <Container />
-      <Header />
-    </>
+      <HashtagList />
+    </div>
   );
 }
 
