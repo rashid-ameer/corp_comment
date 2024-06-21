@@ -1,13 +1,9 @@
 import { ErrorMessage, FeedbackItem, Spinner } from "..";
-import { TFeedbackItem } from "../../lib/types";
+import { useFeedbackItemsContext } from "../../lib/hooks";
 
-type FeedbackListProps = {
-  feedbackItems: TFeedbackItem[];
-  isLoading: boolean;
-  errorMessage: string;
-};
+function FeedbackList() {
+  const { isLoading, errorMessage, filteredFeedbackItems } = useFeedbackItemsContext();
 
-function FeedbackList({ feedbackItems, isLoading, errorMessage }: FeedbackListProps) {
   return (
     <ol className="feedback-list">
       {errorMessage && <ErrorMessage message={errorMessage} />}
@@ -15,7 +11,7 @@ function FeedbackList({ feedbackItems, isLoading, errorMessage }: FeedbackListPr
         <Spinner />
       ) : (
         <>
-          {feedbackItems.map((feedbackItem) => (
+          {filteredFeedbackItems.map((feedbackItem) => (
             <FeedbackItem
               key={feedbackItem.id}
               feedbackItem={feedbackItem}
